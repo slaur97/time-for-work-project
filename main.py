@@ -23,7 +23,7 @@ def reset_button():
 def start_button():
     global nr
     nr+=1
-    label.config(text="WORK", fg="blue")
+    label.config(text="WORK", fg="blue",background=GREEN)
     count_down(int(entry.get())*60)
     if(nr%2== 0):
         label.config(text="Break", fg="break")
